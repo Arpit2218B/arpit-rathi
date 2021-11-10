@@ -68,11 +68,11 @@ header nav ul {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  gap: 1em;
 }
 
 header nav ul a {
   display: block;
-  padding: 0 1em;
 }
 
 ul > li > a > img {
@@ -338,7 +338,7 @@ section {
 
 @media screen and (min-width: 1200px) {
   header {
-    padding: 2em 2em 2em 10em !important;
+    padding: 1em 1em 1em 10em !important;
   }
   .social-header {
     padding: 2em 10em 2em 0 !important;
