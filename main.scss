@@ -329,3 +329,21 @@ section {
         }
     }
 }
+
+@media screen and (min-width: 1200px) {
+    header {
+        padding: 2em 2em 2em 10em !important;
+    }
+
+    .social-header {
+        padding: 2em 10em 2em 0 !important;
+    }
+
+    section {
+        padding: 10em 10em 4em 10em !important;
+    }
+
+    .hero .content {
+        padding: 6em 8em 6em 10em !important;
+    }
+}
