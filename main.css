@@ -348,5 +348,8 @@ section {
   .hero .content {
     padding: 6em 8em 6em 10em !important;
   }
+  .footer {
+    padding: 2em !important;
+  }
 }
 /*# sourceMappingURL=main.css.map */
