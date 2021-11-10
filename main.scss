@@ -216,6 +216,10 @@ section {
 }
 
 @media screen and (min-width: 768px) {
+    .social-footer > ul {
+        display: none;
+    }
+
     .portfolio,
     .featured {
         text-align: left;
