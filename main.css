@@ -46,7 +46,7 @@ img {
   padding: 1em;
   aspect-ratio: 1;
   border-radius: 50%;
-  background-color: var(--c2);
+  background-color: var(--primary-color);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
