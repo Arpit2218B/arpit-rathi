@@ -41,8 +41,8 @@ img {
 
 .floating-button {
   position: fixed;
-  bottom: 40px;
-  right: 40px;
+  bottom: 20px;
+  right: 20px;
   padding: 1em;
   aspect-ratio: 1;
   border-radius: 50%;
@@ -58,6 +58,7 @@ img {
           box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
   color: white;
   cursor: pointer;
+  z-index: 1000;
 }
 
 .nav-container {
@@ -71,6 +72,26 @@ img {
 
 .nav-container a {
   color: #fff;
+}
+
+.project-links {
+  padding-top: 1em;
+}
+
+.project-links .links {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  margin-right: 1em;
 }
 
 header {
@@ -189,9 +210,13 @@ section {
 .featured-desc {
   text-align: left;
   color: var(--c6);
-  margin-bottom: 3em;
+  margin-bottom: 8px;
   line-height: 1.5;
   font-weight: 500;
+}
+
+.project-links {
+  margin-bottom: 3em;
 }
 
 .portfolio-container > a > img {
@@ -221,6 +246,7 @@ section {
 
 .about .profile img {
   width: 100%;
+  border-radius: 0.5em;
 }
 
 .colored {
@@ -268,6 +294,10 @@ section {
 }
 
 @media screen and (min-width: 768px) {
+  .floating-button {
+    bottom: 40px;
+    right: 40px;
+  }
   .nav-container {
     position: static;
   }
