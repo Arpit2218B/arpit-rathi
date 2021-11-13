@@ -9,6 +9,10 @@
   --c6: #3B3B3B;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -32,11 +36,37 @@ a {
 }
 
 img {
-  max-width: 100%;
+  max-width: 90%;
+}
+
+.floating-button {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  padding: 1em;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background-color: var(--c2);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  -webkit-box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+          box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+  color: white;
+  cursor: pointer;
 }
 
 .nav-container {
   background-color: var(--c2);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 4;
 }
 
 .nav-container a {
@@ -170,24 +200,34 @@ section {
 }
 
 .about {
-  background-color: var(--c4);
+  background-color: var(--primary-color);
+  color: white;
+  display: -ms-grid;
+  display: grid;
 }
 
 .about p {
-  background-color: white;
-  -webkit-box-shadow: var(--c6) 0 0 0.2em;
-          box-shadow: var(--c6) 0 0 0.2em;
-  padding: 2em;
+  padding: 1em;
   margin: 2em -0.5em;
-  margin-bottom: -5em;
   border-radius: 0.2em;
+  text-align: left;
+}
+
+.about .about-title {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 1em;
+}
+
+.about .profile img {
+  width: 100%;
 }
 
 .colored {
   color: var(--primary-color);
 }
 
-.hire-me a {
+.hire-me .hire-me-btn {
   background-color: var(--primary-color);
   color: #FFFFFF;
   padding: 0.8em 1.6em;
@@ -211,12 +251,13 @@ section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  gap: 2em;
   margin: 2em auto;
   width: 100%;
   max-width: 400px;
@@ -227,6 +268,9 @@ section {
 }
 
 @media screen and (min-width: 768px) {
+  .nav-container {
+    position: static;
+  }
   .social-footer > ul {
     display: none;
   }
@@ -258,9 +302,12 @@ section {
   }
   .about > .content > p {
     text-align: left;
-    width: 50%;
+    width: 100%;
     padding: 2em;
     line-height: 1.8;
+  }
+  .about .profile img {
+    width: 50%;
   }
 }
 
@@ -300,6 +347,14 @@ section {
     width: 70%;
     float: right;
   }
+  .nav-container .social-header ul li:hover {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+    -webkit-transition: -webkit-transform 0.2s ease-in-out;
+    transition: -webkit-transform 0.2s ease-in-out;
+    transition: transform 0.2s ease-in-out;
+    transition: transform 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
+  }
   .hero {
     display: -ms-grid;
     display: grid;
@@ -334,6 +389,19 @@ section {
     margin-top: 25%;
     width: 100%;
   }
+  .about__inner {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 2fr 1fr;
+        grid-template-columns: 2fr 1fr;
+  }
+  .about__inner .profile img {
+    width: 60%;
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -344,7 +412,7 @@ section {
     padding: 2em 10em 2em 0 !important;
   }
   section {
-    padding: 10em 10em 4em 10em !important;
+    padding: 5em 10em 4em 10em !important;
   }
   .hero .content {
     padding: 6em 8em 6em 10em !important;

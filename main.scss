@@ -11,6 +11,10 @@
 
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -35,11 +39,32 @@ a {
 }
 
 img {
-    max-width: 100%;
+    max-width: 90%;
+}
+
+.floating-button {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    padding: 1em;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background-color: var(--c2);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+    color: white;
+    cursor: pointer;
 }
 
 .nav-container {
     background-color: var(--c2);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 4;
 
     a {
         color: #fff;
@@ -168,15 +193,30 @@ section {
 
 // About Section
 .about {
-    background-color: var(--c4);
+    background-color: var(--primary-color);
+    color: white;
+    display: grid;
 
     p {
-        background-color: white;
-        box-shadow: var(--c6) 0 0 0.2em;
-        padding: 2em;
+        // background-color: white;
+        // box-shadow: var(--c6) 0 0 0.2em;
+        padding: 1em;
         margin: 2em -0.5em;
-        margin-bottom: -5em;
+        // margin-bottom: -5em;
         border-radius: 0.2em;
+        text-align: left;
+    }
+
+    .about-title {
+        font-size: 1.5em;
+        font-weight: bold;
+        margin-bottom: 1em;
+    }
+
+    .profile {
+        img {
+            width: 100%;
+        }
     }
 }
 
@@ -184,7 +224,7 @@ section {
     color: var(--primary-color);
 }
 
-.hire-me a {
+.hire-me .hire-me-btn {
     background-color: var(--primary-color);
     color: #FFFFFF;
     padding: 0.8em 1.6em;
@@ -206,8 +246,9 @@ section {
 
 .social-footer > ul {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    gap: 2em;
     margin: 2em auto;
     width: 100%;
     max-width: 400px;
@@ -218,6 +259,10 @@ section {
 }
 
 @media screen and (min-width: 768px) {
+    .nav-container {
+        position: static;
+    }
+
     .social-footer > ul {
         display: none;
     }
@@ -253,9 +298,17 @@ section {
 
     .about > .content > p {
         text-align: left;
-        width: 50%;
+        width: 100%;
         padding: 2em;
         line-height: 1.8;
+    }
+
+    .about {
+        .profile {
+            img {
+                width: 50%;
+            }
+        }
     }
 
 }
@@ -291,6 +344,11 @@ section {
                 height: 100%;
                 width: 70%;
                 float: right;
+
+                li:hover {
+                    transform: scale(1.1);
+                    transition: transform 0.2s ease-in-out;
+                }
             }
         }
     }
@@ -330,6 +388,19 @@ section {
             width: 100%;
         }
     }
+
+    .about__inner {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        .profile {
+            img {
+                width: 60%;
+                position: relative;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+        }
+    }
 }
 
 @media screen and (min-width: 1200px) {
@@ -342,7 +413,7 @@ section {
     }
 
     section {
-        padding: 10em 10em 4em 10em !important;
+        padding: 5em 10em 4em 10em !important;
     }
 
     .hero .content {
