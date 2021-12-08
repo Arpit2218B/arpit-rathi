@@ -110,6 +110,8 @@ header {
 header .logo {
   color: var(--c3);
   font-weight: bold;
+  letter-spacing: 4px;
+  font-size: 1.1em;
 }
 
 header nav ul {
@@ -384,6 +386,9 @@ section {
     transition: -webkit-transform 0.2s ease-in-out;
     transition: transform 0.2s ease-in-out;
     transition: transform 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
+  }
+  .nav-container .projects-page {
+    background-color: var(--c2);
   }
   .hero {
     display: -ms-grid;

@@ -8,7 +8,6 @@
     --c4: #FF64CB;
     --c5: #E5D5FA;
     --c6: #3B3B3B;
-
 }
 
 html {
@@ -95,7 +94,8 @@ header {
     .logo {
         color: var(--c3);
         font-weight: bold;
-        // font-size: 1.5em;
+        letter-spacing: 4px;
+        font-size: 1.1em;
     }
 
     nav {
@@ -375,6 +375,10 @@ section {
                     transition: transform 0.2s ease-in-out;
                 }
             }
+        }
+
+        .projects-page {
+            background-color: var(--c2);
         }
     }
 
