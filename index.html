@@ -6,6 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Arpit Rathi</title>
     <link rel="stylesheet" href="main.css">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-217266130-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-217266130-1');
+    </script>
 </head>
 <body>
     <!-- Floating button -->
@@ -29,16 +38,16 @@
         </header>
         <div class="social-header">
             <ul>
-                <li><a href="https://www.linkedin.com/in/arpit-rathi-687b87125/">
+                <li><a href="https://www.linkedin.com/in/arpit-rathi-687b87125/" onclick="send_gtm_event('social_media', 'click', 'linkedin')">
                     <img src="images/linkedin.png" alt="linkedin">
                 </a></li>
-                <li><a href="https://twitter.com/Arpit2218">
+                <li><a href="https://twitter.com/Arpit2218" onclick="send_gtm_event('social_media', 'click', 'twitter')">
                     <img src="images/twitter.png" alt="twitter">
                 </a></li>
-                <li><a href="https://github.com/Arpit2218B">
+                <li><a href="https://github.com/Arpit2218B" onclick="send_gtm_event('social_media', 'click', 'github')">
                     <img src="images/github.png" alt="github">
                 </a></li>
-                <li><a href="https://www.instagram.com/arpit.rathi.2218/">
+                <li><a href="https://www.instagram.com/arpit.rathi.2218/" onclick="send_gtm_event('social_media', 'click', 'instagram')">
                     <img src="images/instagram.png" alt="instagram">
                 </a></li>
             </ul>
@@ -79,11 +88,11 @@
                 <p class="subtitle">
                     Featured Project
                 </p>
-                <a href="https://whatsapp-clone-4c608.web.app" class="featured-title">Whatsapp Rooms</a>
+                <a href="https://whatsapp-clone-4c608.web.app" class="featured-title" onclick="send_gtm_event('project', 'click', 'website_visit_whatsapp_rooms')">Whatsapp Rooms</a>
                 <p class="featured-desc">It is a web application built using technologies like React Js and Firebase. It allows you to create and join public rooms and send text messages and emojis in realtime.</p>
                 <div class="project-links">
-                    <a href="https://github.com/Arpit2218B/whatsapp-clone" class="links"><img src="./images/github.png" alt=""></a>
-                    <a href="https://whatsapp-clone-4c608.web.app/" class="links"><img src="./images/browser.png" alt=""></a>
+                    <a href="https://github.com/Arpit2218B/whatsapp-clone" class="links"><img src="./images/github.png" alt="" onclick="send_gtm_event('project', 'click', 'github_visit_whatsapp_rooms')"></a>
+                    <a href="https://whatsapp-clone-4c608.web.app/" class="links"><img src="./images/browser.png" alt="" onclick="send_gtm_event('project', 'click', 'website_visit_whatsapp_rooms')"></a>
                 </div>
             </div>
         </div>
@@ -121,12 +130,12 @@
                     <p class="featured-title">Spotify clone</p>
                     <p class="featured-desc">It is a simple clone of the original web version of spotify. It uses Spotify OAuth to authenticate users and allows them to search for songs and view their playlists. It is built using React Js.</p>
                     <div class="project-links">
-                        <a href="https://github.com/Arpit2218B/spotify-clone" class="links"><img src="./images/github.png" alt=""></a>
-                        <a href="https://spotify-clone-f4134.web.app/" class="links"><img src="./images/browser.png" alt=""></a>
+                        <a href="https://github.com/Arpit2218B/spotify-clone" class="links"><img src="./images/github.png" alt="" onclick="send_gtm_event('project', 'click', 'github_visit_spotify_clone')"></a>
+                        <a href="https://spotify-clone-f4134.web.app/" class="links"><img src="./images/browser.png" alt="" onclick="send_gtm_event('project', 'click', 'website_visit_spotify_clone')"></a>
                     </div>
                 </div>
             </div>
-            <a href="https://spotify-clone-f4134.web.app/" class="featured-right"><img src="images/spotifyclone.png" alt="Project 1"></a>
+            <a href="https://spotify-clone-f4134.web.app/" class="featured-right"><img src="images/spotifyclone.png" alt="Project 1" onclick="send_gtm_event('project', 'click', 'website_visit_spotify_clone')"></a>
         </div>
 
         <div class="portfolio-container transition3">
@@ -136,12 +145,12 @@
                     <p class="featured-title">Football Dex</p>
                     <p class="featured-desc">It is similar to the Pokedex that we used to see in Pokemon in our childhood but it is for football clubs. It uses Next Js and external football data api.</p>
                     <div class="project-links">
-                        <a href="https://github.com/Arpit2218B/football-dex" class="links"><img src="./images/github.png" alt=""></a>
-                        <a href="https://footballdex.vercel.app/" class="links"><img src="./images/browser.png" alt=""></a>
+                        <a href="https://github.com/Arpit2218B/football-dex" class="links"><img src="./images/github.png" alt="" onclick="send_gtm_event('project', 'click', 'github_visit_football_dex')"></a>
+                        <a href="https://footballdex.vercel.app/" class="links"><img src="./images/browser.png" alt="" onclick="send_gtm_event('project', 'click', 'website_visit_football_dex')"></a>
                     </div>
                 </div>
             </div>
-            <a href="https://footballdex.vercel.app/" class="featured-right"><img src="images/footballdex.png" alt="Project 1"></a>
+            <a href="https://footballdex.vercel.app/" class="featured-right"><img src="images/footballdex.png" alt="Project 1" onclick="send_gtm_event('project', 'click', 'website_visit_football_dex')"></a>
         </div>
 
         <div class="portfolio-container transition3">
@@ -151,12 +160,12 @@
                     <p class="featured-title">Open my session</p>
                     <p class="featured-desc">It is a chrome extension that I built to ease my day-to-day work. It allows you to add websites and tag them and then open all the websites of a particular tag at one click rather than opening each manually.</p>
                     <div class="project-links">
-                        <a href="https://github.com/Arpit2218B/open-my-sessions" class="links"><img src="./images/github.png" alt=""></a>
-                        <a href="https://chrome.google.com/webstore/detail/open-my-sessions/jaojfaebhpahcbdicoaalnlldcplhclg" class="links"><img src="./images/browser.png" alt=""></a>
+                        <a href="https://github.com/Arpit2218B/open-my-sessions" class="links"><img src="./images/github.png" alt="" onclick="send_gtm_event('project', 'click', 'github_visit_open_my_sessions')"></a>
+                        <a href="https://chrome.google.com/webstore/detail/open-my-sessions/jaojfaebhpahcbdicoaalnlldcplhclg" class="links"><img src="./images/browser.png" alt="" onclick="send_gtm_event('project', 'click', 'website_visit_open_my_sessions')"></a>
                     </div>
                 </div>
             </div>
-            <a href="https://chrome.google.com/webstore/detail/open-my-sessions/jaojfaebhpahcbdicoaalnlldcplhclg" class="featured-right"><img src="images/openmysessions.png" alt="Project 1"></a>
+            <a href="https://chrome.google.com/webstore/detail/open-my-sessions/jaojfaebhpahcbdicoaalnlldcplhclg" class="featured-right"><img src="images/openmysessions.png" alt="Project 1" onclick="send_gtm_event('project', 'click', 'website_visit_open_my_sessions')"></a>
         </div>
 
         <div class="portfolio-container transition3">
@@ -166,15 +175,16 @@
                     <p class="featured-title">Theme Switcher</p>
                     <p class="featured-desc">It is a simple HTML and CSS application which demonstrtes an easy way to implement a theme switcher.</p>
                     <div class="project-links">
-                        <a href="https://github.com/Arpit2218B/theme-switcher" class="links"><img src="./images/github.png" alt=""></a>
-                        <a href="https://arpit2218b.github.io/theme-switcher/" class="links"><img src="./images/browser.png" alt=""></a>
+                        <a href="https://github.com/Arpit2218B/theme-switcher" class="links"><img src="./images/github.png" alt="" onclick="send_gtm_event('project', 'click', 'github_visit_theme_switcher')"></a>
+                        <a href="https://arpit2218b.github.io/theme-switcher/" class="links"><img src="./images/browser.png" alt="" onclick="send_gtm_event('project', 'click', 'website_visit_theme_switcher')"></a>
                     </div>
                 </div>
             </div>
-            <a href="https://arpit2218b.github.io/theme-switcher/" class="featured-right"><img src="images/themeswitcher.png" alt="Project 1"></a>
+            <a href="https://arpit2218b.github.io/theme-switcher/" class="featured-right"><img src="images/themeswitcher.png" alt="Project 1" onclick="send_gtm_event('project', 'click', 'website_visit_theme_switcher')"></a>
         </div>
 
-        <center><a href="./projects.html" class="colored">See more work</a></center>
+        <!-- Need to add projects and then uncomment this line -->
+        <!-- <center><a href="./projects.html" class="colored">See more work</a></center> -->
     </section>
     <!-- End of My Work -->
 
@@ -197,7 +207,7 @@
                 <h3>Like what you see?
                     <a href="#" class="colored">Let's get in touch</a>
                 </h3>
-                <a href="mailto:arpit97rathi@gmail.com" class="hire-me-btn" s>Send a message</a>
+                <a href="mailto:arpit97rathi@gmail.com" class="hire-me-btn" onclick="send_gtm_event('get_in_touch', 'click', 'email')">Send a message</a>
             </div>
         </div>
     </section>
@@ -205,16 +215,16 @@
     <!-- Footer -->
     <div class="social-footer">
         <ul>
-            <li><a href="https://www.linkedin.com/in/arpit-rathi-687b87125/">
+            <li><a href="https://www.linkedin.com/in/arpit-rathi-687b87125/" onclick="send_gtm_event('social_media', 'click', 'linkedin')">
                 <img src="images/linkedin.png" alt="linkedin">
             </a></li>
-            <li><a href="https://twitter.com/Arpit2218">
+            <li><a href="https://twitter.com/Arpit2218" onclick="send_gtm_event('social_media', 'click', 'twitter')">
                 <img src="images/twitter.png" alt="twitter">
             </a></li>
-            <li><a href="https://github.com/Arpit2218B">
+            <li><a href="https://github.com/Arpit2218B" onclick="send_gtm_event('social_media', 'click', 'github')">
                 <img src="images/github.png" alt="github">
             </a></li>
-            <li><a href="https://www.instagram.com/arpit.rathi.2218/">
+            <li><a href="https://www.instagram.com/arpit.rathi.2218/" onclick="send_gtm_event('social_media', 'click', 'instagram')">
                 <img src="images/instagram.png" alt="instagram">
             </a></li>
         </ul>
@@ -231,6 +241,14 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollTrigger.min.js" integrity="sha512-CPA5LMoJI/a5HkSIAKcBtFXe4gqGjPUL2ExF/3PmhrrHI17wod9xOqqF+0WZQRKIIq0KwF8oG5BaiWobtrke3A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
+        // google analytics
+        function send_gtm_event(category, action, label) {
+            gtag('event', action, {
+                'event_category': category,
+                'event_label': label
+            });
+        }
+
         gsap.registerPlugin(ScrollTrigger);
         var tl = gsap.timeline();
 
