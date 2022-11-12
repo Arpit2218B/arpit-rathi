@@ -107,11 +107,30 @@ header {
   padding: 1em 1.5em;
 }
 
-header .logo {
+header .logoContainer {
   color: var(--c3);
   font-weight: bold;
   letter-spacing: 4px;
   font-size: 1.1em;
+  display: flex;
+  align-items: center;
+}
+
+.textLogo {
+  display: none;
+}
+
+.logo {
+  width: 150px;
+}
+
+@media screen and (max-width: 500px) {
+  .textLogo {
+    display: unset;
+  }
+  .logo {
+    display: none;
+  }
 }
 
 header nav ul {

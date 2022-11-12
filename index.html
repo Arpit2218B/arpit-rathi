@@ -7,8 +7,8 @@
     <title>Arpit Rathi</title>
     <link rel="stylesheet" href="main.css">
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-217266130-1"></script>
-    <script>
+    <script defer src="https://www.googletagmanager.com/gtag/js?id=UA-217266130-1"></script>
+    <script defer>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
@@ -26,10 +26,13 @@
     <!-- Navbar -->
     <div class="nav-container" id="nav">
         <header>
-            <a href="index.html" class="logo">Arpit Rathi</a>
+            <a href="index.html" class="logoContainer">
+                <img src="./images/logo.png" class="logo" />
+                <span class="textLogo">ARPIT</span>
+            </a>
             <nav>
                 <ul>
-                    <li><a href="#portfolio">My work</a></li>
+                    <li><a href="#portfolio">Work</a></li>
                     <li><a href="#about">About</a></li>
                     <!-- <li><a href="#hire">Hire me</a></li> -->
                     <li><a href="#hire">Contact</a></li>
